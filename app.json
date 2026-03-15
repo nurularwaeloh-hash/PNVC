@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Pnvc",
+    "slug": "Pnvc",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/pnvc.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./src/assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.Pnvc",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "ขออนุญาตเข้าถึงคลังภาพเพื่อบันทึกรูปบัตรประจำตัวนักศึกษาลงในเครื่องของคุณ",
+        "NSPhotoLibraryAddUsageDescription": "ขออนุญาตบันทึกรูปภาพลงในคลังภาพของคุณ"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.Pnvc",
+      "permissions": [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Pnvc to access your photos.",
+          "savePhotosPermission": "Allow Pnvc to save photos.",
+          "isUsageDescriptionRequired": true
+        }
+      ]
+    ]
+  }
+}
